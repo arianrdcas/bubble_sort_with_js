@@ -45,17 +45,17 @@ let arrayS = [];
 
 function generaPinta (){
     let pt = Math.floor(Math.random()* pinta.length);
-    //console.log(pt);
+
     let valorPinta = pinta[pt];
-    //console.log(valorPinta);
+    
     return valorPinta;
 }
 
 function generaNumero (){
     let nr = Math.floor(Math.random()* cards.length);
-    //console.log(nr);
+
     let valor = cards[nr];
-    //console.log(valor);
+    
     return valor;
 }
 
@@ -74,9 +74,9 @@ function crearCarta(){
 
 function mostrarCarta() {
 
-    crearCarta(); //creo array Valores y Pinta
+    crearCarta(); 
 
-    arraySortF = convertirCartas(arrayValor); // convierto las cartas a letras
+    arraySortF = convertirCartas(arrayValor); 
 
     const cards_Elems = document.getElementById("cards");
 
@@ -167,10 +167,10 @@ function ordenarPinta(aValor){
 
         const valor = aValor[index];
 
-        arrayP2.push(valor);    //creo array de valores 
+        arrayP2.push(valor);    
     }
 
-    arrayOrdenado = bubbleSort(aValor); // ordeno array
+    arrayOrdenado = bubbleSort(aValor); 
 
     for (let index = 0; index < arrayP2.length; index++) {
 
@@ -178,7 +178,7 @@ function ordenarPinta(aValor){
         
         const b = arrayOrdenado.findIndex(k => k === valor2);
 
-        arrayPintaOrdenado.push(b); //creo array de pinta ordenado
+        arrayPintaOrdenado.push(b); 
     }
 
     for (let index = 0; index < arrayPintaOrdenado.length; index++) {
@@ -187,7 +187,7 @@ function ordenarPinta(aValor){
         
         const c = arrayPinta[val];
 
-        arrayPintaOrdenadoV.push(c); //creo array de valores de pinta ordanado
+        arrayPintaOrdenadoV.push(c); 
     }
 
     return arrayPintaOrdenadoV;
@@ -197,7 +197,7 @@ function mostrarCartaOrdenadas(){
 
     let aPintaOrdenado = ordenarPinta(arrayValor);
 
-    arraySortF = convertirCartas(arrayOrdenado); // convierto las cartas a letras
+    arraySortF = convertirCartas(arrayOrdenado); 
 
     const cards_Elems = document.getElementById("cards2");
 
