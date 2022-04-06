@@ -22,26 +22,9 @@ let arrayPinta = [];
 
 let arrayValor = [];
 
-
-let arra = [];
-
-let arraySort = [];
-
-let arrayFinal = [];
-
-let arrayFSort = [];
-
-let arrayOrdenado = [];
-
-let arraySortF = [];
-
-
-
 let arrayPintaOrdenado = [];
 
 let arrayPintaOrdenadoV = [];
-
-let arrayS = [];
 
 function generaPinta (){
     let pt = Math.floor(Math.random()* pinta.length);
